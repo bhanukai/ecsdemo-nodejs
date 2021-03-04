@@ -19,13 +19,13 @@ pipeline {
             }
         }
 
-        stage("Lint dockerfile") {
-            steps {
-                script {
-                    sh "docker run --rm -i hadolint/hadolint < Dockerfile"
-                }
-            }
-        }
+        // stage("Lint dockerfile") {
+        //     steps {
+        //         script {
+        //             sh "docker run --rm -i hadolint/hadolint < Dockerfile"
+        //         }
+        //     }
+        // }
 
         stage("Build") {
             steps {
